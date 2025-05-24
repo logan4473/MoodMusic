@@ -19,38 +19,52 @@ Whether you're feeling happy, chill, sad, or energetic — tap a button and vibe
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/MoodMusic.git
+```bash
+git clone https://github.com/logan4473/MoodMusic.git
 cd MoodMusic
+```
 
 ### 2. Create a Virtual Environment
 
+```bash
 python -m venv venv
+```
 
 Activate it:
 
 - On Windows:
+  ```bash
   venv\Scripts\activate
+  ```
 - On macOS/Linux:
+  ```bash
   source venv/bin/activate
+  ```
 
 ### 3. Install Dependencies
 
+```bash
 pip install "kivy[base]" kivy_examples
+```
 
 ### 4. Run the App
 
+```bash
 python main.py
+```
 
 ---
 
 ## 📂 Folder Structure
 
+```text
 MoodMusic/
-├── main.py
-├── assets/ # Add your MP3 files here
-├── venv/ # Virtual environment (excluded from Git)
+├── main.py          # Your Kivy app
+├── assets/          # Add your MP3 files here
+├── venv/            # Virtual environment (excluded from Git)
 ├── .gitignore
 └── README.md
+```
 
 ---
 
