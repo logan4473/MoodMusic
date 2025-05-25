@@ -1,6 +1,6 @@
 # 🎧 MoodMusic
 
-A fun little mobile-style app built with Python and Kivy that plays music based on your current mood!
+A fun little web app built with Python and Streamlit that plays music based on your current mood!
 
 Whether you're feeling happy, chill, sad, or energetic — tap a button and vibe out. No job goals, no pressure — just code and good tunes.
 
@@ -11,7 +11,8 @@ Whether you're feeling happy, chill, sad, or energetic — tap a button and vibe
 - 🟡 Simple, mood-based UI
 - 🎵 Plays local music files (MP3)
 - 🎨 Easy to customize moods and songs
-- 🐍 Powered by Python & Kivy
+- 🌐 Runs in the browser via Streamlit
+- 🐍 Powered by Python
 
 ---
 
@@ -24,7 +25,7 @@ git clone https://github.com/logan4473/MoodMusic.git
 cd MoodMusic
 ```
 
-### 2. Create a Virtual Environment
+### 2. Create a Virtual Environment (Optional but Recommended)
 
 ```bash
 python -m venv venv
@@ -44,13 +45,13 @@ Activate it:
 ### 3. Install Dependencies
 
 ```bash
-pip install "kivy[base]" kivy_examples
+pip install streamlit
 ```
 
 ### 4. Run the App
 
 ```bash
-python main.py
+streamlit run main.py
 ```
 
 ---
@@ -59,7 +60,7 @@ python main.py
 
 ```text
 MoodMusic/
-├── main.py          # Your Kivy app
+├── main.py          # Streamlit app script
 ├── assets/          # Add your MP3 files here
 ├── venv/            # Virtual environment (excluded from Git)
 ├── .gitignore
@@ -70,10 +71,10 @@ MoodMusic/
 
 ## 💡 Future Ideas
 
-- Spotify API integration
-- Mood detection via emoji or time of day
-- Colorful animated transitions
-- Build Android APK using Buildozer
+- Upload your own music
+- Mood detection via webcam/emojis
+- Mood-based backgrounds or themes
+- Deploy to Streamlit Cloud
 
 ---
 
