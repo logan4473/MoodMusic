@@ -1,89 +1,81 @@
-# 🎧 MoodMusic
+🎧 MoodMusic
 
-A fun little web app built with Python and Streamlit that plays music based on your current mood!
-
-Whether you're feeling happy, chill, sad, or energetic — tap a button and vibe out. No job goals, no pressure — just code and good tunes.
-
----
-
-## 🚀 Features
-
-- 🟡 Simple, mood-based UI
-- 🎵 Plays local music files (MP3)
-- 🎨 Easy to customize moods and songs
-- 🌐 Runs in the browser via Streamlit
-- 🐍 Powered by Python
+MoodMusic is a fun Streamlit app that lets you explore Spotify playlists based on your mood.  
+Select how you feel, and vibe instantly with embedded Spotify players — no login required (but it helps)!
 
 ---
 
-## 🛠️ Setup Instructions
+🌟 Features
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/logan4473/MoodMusic.git
-cd MoodMusic
-```
-
-### 2. Create a Virtual Environment (Optional but Recommended)
-
-```bash
-python -m venv venv
-```
-
-Activate it:
-
-- On Windows:
-  ```bash
-  venv\Scripts\activate
-  ```
-- On macOS/Linux:
-  ```bash
-  source venv/bin/activate
-  ```
-
-### 3. Install Dependencies
-
-```bash
-pip install streamlit
-```
-
-### 4. Run the App
-
-```bash
-streamlit run main.py
-```
+- 🎯 Mood selection: Happy, Sad, Chill, Energetic
+- 🔎 Auto-fetches mood-matching Spotify playlists
+- 🎵 Embedded Spotify players for instant listening
+- 🔗 Clickable links to open playlists in Spotify
+- 🔐 Secure Spotify API integration with Streamlit secrets
 
 ---
 
-## 📂 Folder Structure
+🚀 How to Run
 
-```text
+1. Clone this repository
+   git clone https://github.com/yourusername/MoodMusic.git
+   cd MoodMusic
+
+2. Install dependencies
+   pip install -r requirements.txt
+
+3. Set up Spotify API credentials
+
+   - Go to Spotify Developer Dashboard
+   - Create an app and get your Client ID and Client Secret
+
+   Create a file at .streamlit/secrets.toml with:
+
+   SPOTIPY_CLIENT_ID = "your-client-id"
+   SPOTIPY_CLIENT_SECRET = "your-client-secret"
+
+4. Run the app
+   streamlit run main.py
+
+---
+
+📁 Project Structure
+
 MoodMusic/
-├── main.py          # Streamlit app script
-├── assets/          # Add your MP3 files here
-├── venv/            # Virtual environment (excluded from Git)
-├── .gitignore
-└── README.md
-```
+├── .streamlit/
+│ └── secrets.toml # Your Spotify API keys
+├── main.py # Streamlit app entry point
+├── README.md # You're reading it
+├── requirements.txt # Python dependencies
 
 ---
 
-## 💡 Future Ideas
+🛠 Requirements
 
-- Upload your own music
-- Mood detection via webcam/emojis
-- Mood-based backgrounds or themes
-- Deploy to Streamlit Cloud
+- Python 3.7+
+- Streamlit
+- Spotipy
 
----
+Create requirements.txt with:
 
-## 🧑‍💻 Author
-
-**Girdhar** — just building this for fun and good vibes ✌️
+streamlit
+spotipy
 
 ---
 
-## 📝 License
+📸 Screenshots
+
+> Add screenshots here showing the app UI and Spotify player widgets.
+
+---
+
+🙌 Credits
+
+Built by Girdhar — just for fun ✌️  
+Using: Streamlit & Spotify Web API
+
+---
+
+📄 License
 
 MIT License
